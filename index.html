@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+  
+  <title>Homepage</title>
+</head>
+
+<body class="bg-[#EF491F] text-[#040420] overflow-x-hidden">
+  
+  <nav class="sticky top-0 left-0 z-50 p-5 flex items-censter bg-[#ef481f]">
+    <h1 class="text-2xl">JO'S<span class="text-xs">©</span></h1>
+    
+    <ul id="top-menu" class="fixed top-0 -right-[100%] z-50 w-52 h-full p-5 bg-white flex flex-col gap-10 text-sm sm:static sm:w-fit sm:h-fit sm:p-0 sm:bg-transparent sm:flex-row sm:ml-auto transition-all duration-500 [&>*]:transition-all">
+      <button id="close-top-menu" class="material-symbols-outlined text-2xl w-fit sm:hidden">close</button>
+      <li class="hover:text-[#EF491F]"><a href="#about">ABOUT</a></li>
+      <li class="hover:text-[#EF491F]">MENU</li>
+      <li class="hover:text-[#EF491F]">REVIEWS</li>
+      <li class="hover:text-[#EF491F]">SOCIAL</li>
+    </ul>
+    
+    <button id="open-top-menu" class="material-symbols-outlined text-3xl ml-auto sm:hidden">menu</button>
+  </nav>
+  
+  <main class="grid gap-10 sm:mt-20 overflow-x-hidden">
+    
+    <!-- hero -->
+    <div class="grid gap-8 sm:grid-cols-2 p-10">
+      <section>
+        <h1 class="text-5xl">NEW YORK'S <br>
+        FAVOURITE <br>
+        BURGERS</h1>
+        <p class="text-sm my-5">NEW YORK'S BEST BURGER HAS COME TO TOWN, COME AND AND ENJOY OUR UNIQUE BEEF PATTIES.</p>
+        <div class="group w-fit">
+          <button class="group relative bg-gray-950 text-sm text-white text-sm px-6 py-2 rounded-md border-2 border-[#040420] overflow-hidden
+            group-hover:before:h-full
+            group-hover:before:rotate-0
+            before:bg-[#ef491f]
+            before:h-0
+            before:w-[160%]
+            before:absolute
+            before:bottom-0
+            before:left-0
+            before:rotate-45
+            before:transition-all
+            before:origin-top-left
+            before:duration-[700ms]
+          ">
+            <span class="relative z-10">VIEW MENU</span>
+          </button>
+        </div>
+      </section>
+      
+      <section class="sm:ml-auto mt-5 sm:mt-0">
+        <img src="https://icodethis.com/images/jos_burger/burger_1.jpg" alt="" class="rounded-md rotate-[7deg] relative -z-10">
+      </section>
+    </div>
+    
+    <!-- about jos -->
+    <div id="about" class="bg-white py-16 px-7">
+      <h1 id="about-title" class="text-[#ef491f] text-2xl mb-3 -translate-x-[150%] opacity-0 transition-all duration-1000">HI, WERE JO'S BURGERS, A COLLECTIVE OF CREATERS WHO LOVE BURGERS AND GOOD MOOD.</h1>
+      
+      <img id="about-img" src="https://icodethis.com/images/jos_burger/creator.jpeg" alt="" class="rounded-lg shadow-2xl translate-x-[150%] opacity-0 transition-all duration-1000">
+    </div>
+    
+    
+    </div>
+  </main>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
